@@ -15,7 +15,6 @@ body {
     background-color: #111;
 }
 
-
 .calculator div {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -25,19 +24,27 @@ body {
 
 #display {
     border: none;
-    border-radius: 10px;
-    background-color: #0efff9;
-    color: red;
-    padding: 10px 5px 10px 0px;
-    font-size: 1.5rem;
-    width: 100%;
+    border-radius: 50vh;
+    background-color: gray;
+    padding: 10px 15px 10px 15px;
+    font-size: 2.5rem;
+    color: white;
+    max-width: 100%;
+    box-sizing: border-box;
     text-align: right;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+input::placeholder {
+    color: white;
 }
 
 button {
-    border-radius: 10px;
+    border-radius: 50%;
     border: none;
-    font-size: 1.5rem;
+    font-size: 2.5rem;
     font-weight: bold;
     cursor: pointer;
     color: white;
