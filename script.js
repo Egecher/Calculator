@@ -9,6 +9,8 @@ function allClear() {
 }
 
 function appendSymbol(Symbol) {
+    if (display.value == "Hata!") display.value = "";
+    if (display.value == "undefined") display.value = "";
     const operators = ["+", "-", "*", "/", "%"];
     const lastChar = display.value[display.value.length - 1];
 
