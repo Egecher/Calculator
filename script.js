@@ -33,6 +33,7 @@ function appendSymbol(Symbol) {
 
 function calculate() {
     try {
+        if (display.value == "") return;
         display.value = eval(display.value);
     } catch {
         display.value = "Hata!"
