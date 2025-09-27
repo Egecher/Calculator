@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="calculator">
+        <input type="text" id="display" disabled placeholder="0">
+
+        <div>
+            <button onclick="allClear()" class="operator">C</button>
+            <button onclick="backSpace()" class="operator">←</button>
+            <button onclick="appendSymbol('%')" class="operator">%</button>
+            <button onclick="appendSymbol('/')" class="operator">/</button>
+        </div>
+
+        <div>
+            <button onclick="appendSymbol('7')" class="number">7</button>
+            <button onclick="appendSymbol('8')" class="number">8</button>
+            <button onclick="appendSymbol('9')" class="number">9</button>
+            <button onclick="appendSymbol('*')" class="operator">x</button>
+        </div>
+
+        <div>
+            <button onclick="appendSymbol('4')" class="number">4</button>
+            <button onclick="appendSymbol('5')" class="number">5</button>
+            <button onclick="appendSymbol('6')" class="number">6</button>
+            <button onclick="appendSymbol('-')" class="operator">-</button>
+        </div>
+
+        <div>
+            <button onclick="appendSymbol('1')" class="number">1</button>
+            <button onclick="appendSymbol('2')" class="number">2</button>
+            <button onclick="appendSymbol('3')" class="number">3</button>
+            <button onclick="appendSymbol('+')" class="operator">+</button>
+        </div>
+
+        <div>
+            <button onclick="appendSymbol('.')" class="number">.</button>
+            <button onclick="appendSymbol('0')" class="number" style="grid-column: span 2;">0</button>
+            <button onclick="calculate()" class="equals">=</button>
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
