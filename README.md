@@ -1,6 +1,6 @@
-# EgecBot Calculator
+# Calculator
 
-EgecBot Calculator, web tabanlı, modern ve kullanıcı dostu bir hesap makinesidir. Basit tasarımı ve hızlı çalışmasıyla günlük hesaplamalar için idealdir.
+Calculator, web tabanlı, modern ve kullanıcı dostu bir hesap makinesidir. Basit tasarımı ve hızlı çalışmasıyla günlük hesaplamalar için idealdir.
 
 ---
 
@@ -23,3 +23,27 @@ EgecBot Calculator, web tabanlı, modern ve kullanıcı dostu bir hesap makinesi
 
 ```bash
 git clone https://github.com/Egecher/Calculator.git
+```
+
+2. `index.html` dosyasını tarayıcıda açın.
+
+---
+
+## Kullanım
+
+* Sayı ve işlem butonlarına tıklayarak hesaplamanızı yapabilirsiniz.
+* `C` ile ekranı temizleyebilir, `←` ile son karakteri silebilirsiniz.
+* `=` ile sonucu görüntüleyebilirsiniz.
+* Nokta ve operatorler kontrollü şekilde eklenir; hatalı girişler engellenir.
+
+---
+
+## Dosya Yapısı
+
+```
+Calculator/
+│
+├── index.html       # Ana HTML dosyası
+├── style.css        # Stil dosyası
+└── script.js        # JavaScript fonksiyonları
+```
