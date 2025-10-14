@@ -55,4 +55,8 @@ document.addEventListener("keydown", (e) => {
     if (key === "Backspace") {
         backSpace();
     }
+
+    if (key === "Escape") {
+        allClear();
+    }
 });
