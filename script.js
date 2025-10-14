@@ -51,4 +51,8 @@ document.addEventListener("keydown", (e) => {
         e.preventDefault();
         calculate();
     }
+
+    if (key === "Backspace") {
+        backSpace();
+    }
 });
