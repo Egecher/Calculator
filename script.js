@@ -46,4 +46,9 @@ document.addEventListener("keydown", (e) => {
     if (!isNaN(key) || ["+", "-", "*", "/", "%", "."].includes(key)) {
         appendSymbol(key);
     }
+
+    if (key === "Enter" || key === "=") {
+        e.preventDefault();
+        calculate();
+    }
 });
