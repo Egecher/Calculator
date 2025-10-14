@@ -39,3 +39,11 @@ function calculate() {
         display.value = "Hata!"
     }
 }
+
+document.addEventListener("keydown", (e) => {
+    const key = e.key;
+
+    if (!isNaN(key) || ["+", "-", "*", "/", "%", "."].includes(key)) {
+        appendSymbol(key);
+    }
+});
