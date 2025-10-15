@@ -32,11 +32,25 @@ function appendSymbol(Symbol) {
 }
 
 function calculate() {
+    const input = display.value.trim();
+
+    if (input === "") return;
+
+    if (!/^[0-9+\-*/().\s]+$/.test(input)) {
+        showError("Geçersiz karakter!");
+        return;
+    }
+
     try {
-        if (display.value == "") return;
-        display.value = eval(display.value);
+        const result = Function('"use strict"; return (' + input + ')')();
+
+        if (isNaN(result) || !isFinite(result)) {
+            showError("Geçersiz işlem!");
+        } else {
+            display.value = result;
+        }
     } catch {
-        display.value = "Hata!"
+        showError("İşlemi tamamlayamadım, denklemi kontrol et.");
     }
 }
 
