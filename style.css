@@ -59,3 +59,13 @@ button:hover {
 .operator {background-color: #00537c;}
 .number {background-color: #007da2;}
 .equals {background-color: #ff0f4d;}
+
+.error {
+    animation: shake 0.2s 2;
+}
+
+@keyframes shake {
+    0%, 100% { transform: translateX(0); }
+    25% { transform: translateX(-3px); }
+    75% { transform: translateX(3px); }
+}
