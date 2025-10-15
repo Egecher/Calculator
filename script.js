@@ -54,6 +54,16 @@ function calculate() {
     }
 }
 
+function showError(message) {
+    display.value = message;
+    display.classList.add("error");
+
+    setTimeout(() => {
+        display.value = "";
+        display.classList.remove("error");
+    }, 2000);
+}
+
 document.addEventListener("keydown", (e) => {
     const key = e.key;
 
